@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_sections"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <fragment
+            class="com.example.a529195.myapplication.fragment.SectionsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sectionName"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:padding="16dp"
+        android:text="Section A"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/layout_students"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            class="com.example.a529195.myapplication.fragment.StudentsFragment"
+            android:layout_width="match_parent"
+            android:id="@+id/studentFag"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>
